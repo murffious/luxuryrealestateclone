@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="lakeside">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Lakeside Resort Properties</title>
+  <script src="https://use.fontawesome.com/c1038005c8.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<!-- When the user selects dates via the availability calendar, the dates they chose will be selected in blue - #2b5179 and the date numbers will be white - #fff.
+
+Another function that happens is the Check in and Check out fields (sidebar right) both populate and correspond with the blue check in and check out dates selected in the availability calendar. The user can update the check in and check out fields as they desire and the availability calendar will update with their chosen dates.
+
+The red dates are unavailable. However, the user can check in on a day a guest is checking out. See calendar-mock.jpg. August 13th is a day a guest is checking out. The user is allowed to check in on this day. Also, a day a guest is checking in a user can check out. See calendar-mock.jpg. August 10th a guest is checking in. The user is allowed to check out on this day. -->
+
+<body ng-controller="mainCtrl">
+  <img class="logo" src="LOGO-01.jpg">
+  <!-- <p>{{broken}}</p>  -->
+  <nav id="main-nav">
+    <li>Sample Pages<i class="fa fa-angle-down" aria-hidden="true"></i></li>
+    <li>Specials <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+    <li>Events</li>
+    <li>Guest Services</li>
+    <li>Area Guide</li>
+    <li>Condos For Sale</li>
+    <li>About</li>
+  </nav>
+  <div class="top-breadcrumbs">
+    <a>Home</a>
+    <a>All Rentals</a>
+    <a>Huntsville, Utah</a>
+    <p class="crumb-final">crumb-finalLakeside Unit 40 | 2 Bed</p>
+
+  </div>
+  <div class="main-wrapper"><img class="jumbo" src="jumbo.jpeg">
+    <h2>Availability</h2>
+    <div class="month-calendar">
+      <table>
+        <tr>
+          <th>August 2017</th>
+        </tr>
+        <tr>
+          <th>MOn</th>
+          <th>Tue</th>
+          <th>Wed</th>
+        </tr>
+
+      </table>
+
+    </div>
+    <div class="booking-selector">
+      test<i class="fa fa-calendar" aria-hidden="true"></i>
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+      <div>
+        <h3>Lakeside Resort Properties</h3>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+
+      </div>
+      <div>
+        <h3>Skiing & Resorts</h3>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+      </div>
+      <div>
+        <h3>Area</h3>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+      </div>
+    </div>
+   <p>All right reserved</p>
+  </footer>
+  
+
+  <!-- <table>
+        <thead>
+        <tr>
+            <th ng-show="showWeeks" class="calendar-week-column text-center">#</th>
+            <th ng-repeat="label in labels track by $index" class="text-center">
+                <small>{{label}}</small>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="row in rows track by $index">
+            <td ng-show="showWeeks" class="calendar-week-column text-center">
+                <small><em>{{ weekNumbers[$index] }}</em></small>
+            </td>
+            <td >
+                <div >
+                   
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table> -->
+
+
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script> -->
+  
+  <!-- angular js -->
+<script src="https://code.angularjs.org/1.5.0-rc.2/angular.js"></script>
+<!-- bootstrap ui -->
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+
+<!-- angular animate -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.js"></script>
+
+<!-- angular touch -->
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-touch.js"></script> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.js"></script> 
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js "></script> 
+  <script src="app/app.js"></script>
+  <script src="app/mainCtrl.js"></script>
+
+</body>
+
+</html>
